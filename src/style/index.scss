@@ -1,0 +1,129 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './custom-container.scss';
+@import './hover.scss';
+
+
+body {
+  // height: 100%; 
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0px !important;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 400;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style:none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: 100%;
+  background-color: #FAFAFA;
+}
+
+.app-container {
+  padding: 0 50px 20px 50px;
+  background-color: #FAFAFA;
+}
+.paitu-icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.el-table td, .el-table th{
+    text-align:center;
+}
+
+//用户交互全局效果
+.productAction:hover{
+    box-shadow:0px 0px 8px #EBEBEB;
+}
+
+//图片样式
+.autoImg{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;  
+    }
+}

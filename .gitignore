@@ -1,0 +1,10 @@
+.DS_Store/
+*/.DS_Store
+node_modules/
+dist/
+.idea/
+psd/
+.cache/
+package-lock.json
+*.swp
+note.js

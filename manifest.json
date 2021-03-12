@@ -1,0 +1,4 @@
+{
+    "app.js": "app.js",
+    "vue.js": "https://cdn.bootcss.com/vue/2.6.10/vue.min.js"
+}

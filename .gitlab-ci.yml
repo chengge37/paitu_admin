@@ -1,0 +1,25 @@
+stages:
+  - deploy
+cache:
+  key: ${CI_BUILD_REF_NAME}
+  paths:
+    - node_modules/
+before_script:
+  - PATH=/www/server/nvm/versions/node/v10.16.0/bin:/usr/local/bin:$PATH
+  - export PATH
+  - echo $PATH
+  - pwd
+  - whoami
+  #- lsof -n -i4TCP:1113 | grep LISTEN | awk '{ print $2 }' | xargs kill 
+# dev分支构建 TEST   ceshi
+deploy-part:
+  stage: deploy
+  tags:
+    - paitume-admin-front        # 这个是runner的tags内容
+  only:
+    - master               # 仅仅master分支会被对应的runner执行
+  script:
+    - whoami
+    - npm install
+    - npm run build
+    - cp -r ./dist/* /home/paitu/admin-front

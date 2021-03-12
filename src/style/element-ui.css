@@ -1,0 +1,125 @@
+/* // 调整element菜单激活颜色 */
+.el-menu-item.is-active {
+  background-color: #ffffff !important;
+}
+
+
+/* //  调整element input */
+.el-input__inner {
+  height: 38px;
+}
+
+/* // 修改text-button颜色 */
+.el-button--text {
+  color: #651FFF;
+}
+
+.el-button--text:hover {
+  color: rgba(97, 24, 255, 0.6);
+}
+
+/* //  修改分页颜色 */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #651FFF;
+}
+
+/* // 修改表格内容上下padding值  */
+.el-table td {
+  padding: 4px 0;
+
+}
+
+/* //  修改表格边框 */
+.el-table {
+  border: 1px solid #eeeeee;
+  border-bottom: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* //  关闭按钮边框 */
+.el-button {
+  border: none;
+  border-color: none;
+}
+
+/* //  修改popover的最小宽度和去除边框 */
+.el-popover {
+  min-width: 80px;
+  border: none;
+}
+
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border-color: #651FFF;
+}
+
+.el-select .el-input__inner:focus {
+  border-color: #651FFF;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #651FFF;
+}
+
+.el-select-dropdown__item.selected {
+  color: #651FFF;
+}
+
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover {
+  border-color: #651FFF;
+}
+
+.el-date-table td.today span {
+  color: #651FFF;
+}
+
+.el-date-table td.available:hover {
+  color: #651FFF;
+}
+
+.el-date-table td.available:active {
+  border-color: #651FFF;
+}
+
+.el-date-table td.end-date span,
+.el-date-table td.start-date span {
+  background-color: #651FFF;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  background-color: #651FFF;
+}
+
+.el-button.is-plain:focus,
+.el-button.is-plain:hover {
+  border-color: #651FFF;
+  color: #651FFF;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: #651FFF;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #651FFF;
+  background: #651FFF;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #651FFF;
+}
+
+.el-cascader-node.in-active-path,
+.el-cascader-node.is-active,
+.el-cascader-node.is-selectable.in-checked-path {
+  color: #651FFF;
+}
+
+.el-tabs__item:hover {
+  color: #651FFF;
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  color: #651FFF;
+  background-color: #ffffff
+}
